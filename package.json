@@ -1,0 +1,38 @@
+{
+  "name": "komet-app",
+  "version": "1.0.0",
+  "description": "frontend app for komet.finance",
+  "main": "src/index.html",
+  "engines": {
+    "node": "12.x"
+  },
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --out-dir=\"./public\"",
+    "start": "http-server -p $PORT || http-server ",
+    "lint": "eslint src/"
+  },
+  "author": "komet.finance",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "http-server": "^0.12.3",
+    "jquery": "1.9.1 - 3",
+    "parcel": "^1.12.4",
+    "popper.js": "^1.16.1",
+    "web3": "^1.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "eslint": "^7.14.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.29.0"
+  }
+}

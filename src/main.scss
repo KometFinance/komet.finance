@@ -1,0 +1,10 @@
+/* here setup the bootstrap overrides */
+$jumbotron-bg: transparent;
+
+@import './scss/bootstrap.scss';
+
+.card_presale {
+    backdrop-filter: blur(100px);
+    border-radius: 90px;
+    background: rgba($dark,0.3);
+  }
