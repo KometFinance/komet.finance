@@ -1,14 +1,14 @@
 {
   "name": "komet-app",
   "version": "1.0.0",
-  "description": "frontend app for komet.finance",
+  "description": "frontend app for komet.capital",
   "main": "src/index.html",
   "engines": {
     "node": "12.x"
   },
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url=\"https://komet.finance/\" --out-dir=\"./public\"",
+    "build": "parcel build src/index.html --public-url=\"https://komet.capital/\" --out-dir=\"./public\"",
     "start": "http-server -p $PORT || http-server ",
     "lint": "eslint src/"
   },

@@ -44,3 +44,14 @@ jobs:
         allow_empty_commit: true
         publish_dir: ./public
         cname: komet.finance
+
+    - name: Deploy to new prod
+      if: github.ref == 'refs/heads/main'
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        deploy_key: ${{ secrets.DEPLOY_KEY_SECRET }}
+        allow_empty_commit: true
+        publish_dir: ./public
+        external_repository: kometfinance/komet.capital
+        cname: komet.capital
+
